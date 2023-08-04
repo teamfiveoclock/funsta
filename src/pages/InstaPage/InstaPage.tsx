@@ -70,16 +70,6 @@ const FollowButton = styled(Flex)`
   margin-left: 13px;
 `;
 
-const AddPeopleWrapper = styled(Flex)`
-  justify-content: center;
-  align-items: center;
-  width: 34px;
-  height: 32px;
-  border-radius: 8px;
-  background-color: #efefef;
-  margin-left: 11px;
-`;
-
 const PostList = styled(Flex)`
   margin-top: 40px;
   flex-direction: column;
