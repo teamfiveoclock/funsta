@@ -12,6 +12,10 @@ const router = createBrowserRouter([
     element: <InstaPage />,
     errorElement: <ErrorPage />,
   },
+  {
+    path: '/jipchakjoo0629',
+    element: <InstaPage />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
