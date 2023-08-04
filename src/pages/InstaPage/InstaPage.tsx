@@ -11,7 +11,6 @@ import { ReactComponent as HeartActiveIcon } from '../../assets/insta/insta_hear
 import { ReactComponent as AddIcon } from '../../assets/insta/insta_add.svg';
 import { ReactComponent as ProfileIcon } from '../../assets/insta/insta_profile.svg';
 import { ReactComponent as MoreIcon } from '../../assets/insta/insta_more.svg';
-import { ReactComponent as AddPeopleIcon } from '../../assets/insta/insta_add_people.svg';
 import { ReactComponent as DotIcon } from '../../assets/insta/insta_dot.svg';
 import { ReactComponent as BookmarkIcon } from '../../assets/insta/insta_bookmark.svg';
 import { ReactComponent as ChatIcon } from '../../assets/insta/insta_chat.svg';
