@@ -110,7 +110,7 @@ const InstaPage = () => {
       imageAlt: '먹구름',
       likeCount: 4,
       content: '내 인생은 왜 이럴까.. 왜 나만 이래',
-      date: '2023년 7월 28일 11:00AM',
+      date: '2023.07.28',
     },
     {
       image:
@@ -119,7 +119,7 @@ const InstaPage = () => {
       likeCount: 3,
       tags: ['거울 셀카'],
       content: '요즘 거울에 비친 모습을 찍는 것이. 유행이라던데ㅋㅋ 한 컷! ^^',
-      date: '2016년 7월 5일 11:00PM',
+      date: '2016.07.05',
     },
     {
       image:
@@ -128,7 +128,7 @@ const InstaPage = () => {
       likeCount: 2,
       tags: ['셀프 카메라', '인스타그램', '셀카'],
       content: '태어나서 처음 찍어본 셀카 사진',
-      date: '2016년 7월 4일 11:00AM',
+      date: '2016.07.04',
     },
     {
       image:
@@ -137,7 +137,7 @@ const InstaPage = () => {
       likeCount: 7,
       tags: ['인스타 그램'],
       content: '인스타 가입했다..\n이렇게 하는 거 맞나?',
-      date: '2016년 7월 3일 16:00PM',
+      date: '2016.07.03',
     },
   ];
 
@@ -260,7 +260,7 @@ const InstaPage = () => {
                       gutter={{ top: 24 }}
                       style={{ fontSize: 20, fontWeight: 600 }}
                     >{`${item.likeCount} likes`}</Typography>
-                    <Flex dir='column' gutter={{ top: 14 }}>
+                    <Flex dir='column' justify='center' gutter={{ top: 14 }}>
                       <Typography
                         inline
                         style={{ fontSize: 20, fontWeight: 600 }}
@@ -277,25 +277,42 @@ const InstaPage = () => {
                         >
                           {item.content}
                         </Typography>
+                        {!item.tags && (
+                          <Typography
+                            inline
+                            // style={{ color: '#737373', fontSize: 18 }}
+                            style={{ fontSize: 20 }}
+                            gutter={{ left: 4 }}
+                          >
+                            [{item.date}]
+                          </Typography>
+                        )}
                       </Typography>
-                      <div>
+                      <Flex align='center'>
                         {item.tags?.map((tag, index) => (
                           <Typography
                             inline
                             style={{
                               fontSize: 20,
-                              color: '#00376B',
+                              // color: '#00376B',
                               marginLeft: index !== 0 ? 4 : 0,
                             }}
                           >
                             #{tag}
                           </Typography>
                         ))}
-                      </div>
+                        {item.tags && (
+                          <Typography
+                            inline
+                            // style={{ color: '#737373', fontSize: 18 }}
+                            style={{ fontSize: 20 }}
+                            gutter={{ left: 4 }}
+                          >
+                            [{item.date}]
+                          </Typography>
+                        )}
+                      </Flex>
                     </Flex>
-                    <Typography style={{ color: '#737373', fontSize: 18 }}>
-                      {item.date}
-                    </Typography>
                   </PostContent>
                 </PostItem>
               ))}
