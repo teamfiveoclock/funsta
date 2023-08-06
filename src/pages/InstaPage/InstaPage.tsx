@@ -193,7 +193,7 @@ const InstaPage = () => {
                   </Flex>
                   <Flex gap={4}>
                     <Typography>Followers</Typography>
-                    <Typography bold>3</Typography>
+                    <Typography bold>0</Typography>
                   </Flex>
                   <Flex gap={4}>
                     <Typography>Following</Typography>
